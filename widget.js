@@ -2,21 +2,22 @@
 const launcher = document.createElement("img");
 
 launcher.src = "https://guoofs.github.io/Grand_Chatbot/Logo_footer.png"; 
+launcher.title = "Chat to our Oddfellows Assistant";
 launcher.alt = "Chat to our Oddfellows Assistant";
 launcher.style.position = "fixed";
-launcher.style.bottom = "20px";
+launcher.style.top = "100px"; 
 launcher.style.right = "20px";
-
 launcher.style.width = "180px";
 launcher.style.height = "auto";
-launcher.style.borderRadius = "0";
-
-launcher.style.background = "#0078d4";
+launcher.style.background = "red";
+launcher.style.padding = "6px";
+launcher.style.border = "4px solid white";
+launcher.style.borderRadius = "50px";
+launcher.style.boxShadow = "0 4px 12px rgba(0,0,0,0.2)";
 launcher.style.color = "white";
 launcher.style.display = "flex";
 launcher.style.alignItems = "center";
 launcher.style.justifyContent = "center";
-launcher.style.borderRadius = "50%";
 launcher.style.cursor = "pointer";
 launcher.style.zIndex = "99999";
 document.body.appendChild(launcher);
