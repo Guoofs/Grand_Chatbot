@@ -9,7 +9,7 @@ launcher.style.width = "95px";   //
 launcher.style.height = "95px";
 launcher.style.borderRadius = "50%";
 
-launcher.style.background = "blue";
+launcher.style.background = "#0078d4";
 launcher.style.border = "4px solid white";
 
 launcher.style.display = "flex";
