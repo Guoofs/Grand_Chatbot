@@ -1,25 +1,48 @@
-// CREATE LAUNCHER
-const launcher = document.createElement("img");
+// CIRCLE BUTTON
+const launcher = document.createElement("div");
 
-launcher.src = "https://guoofs.github.io/Grand_Chatbot/Logo_footer.png"; 
-launcher.title = "Chat to our Oddfellows Assistant";
-launcher.alt = "Chat to our Oddfellows Assistant";
 launcher.style.position = "fixed";
-launcher.style.top = "100px"; 
-launcher.style.right = "20px";
-launcher.style.width = "180px";
-launcher.style.height = "auto";
-launcher.style.background = "red";
-launcher.style.padding = "6px";
+launcher.style.top = "150px";
+launcher.style.right = "30px";
+
+launcher.style.width = "95px";   //
+launcher.style.height = "95px";
+launcher.style.borderRadius = "50%";
+
+launcher.style.background = "blue";
 launcher.style.border = "4px solid white";
-launcher.style.borderRadius = "50px";
-launcher.style.boxShadow = "0 4px 12px rgba(0,0,0,0.2)";
-launcher.style.color = "white";
+
 launcher.style.display = "flex";
+launcher.style.flexDirection = "column";   
 launcher.style.alignItems = "center";
 launcher.style.justifyContent = "center";
+
+launcher.style.color = "white";
+launcher.style.fontSize = "12px";
+launcher.style.fontWeight = "bold";
+launcher.style.textAlign = "center";
+launcher.style.lineHeight = "1.1";
+
+launcher.style.boxSizing = "border-box";
 launcher.style.cursor = "pointer";
 launcher.style.zIndex = "99999";
+
+// ICON
+const icon = document.createElement("div");
+icon.innerHTML = `
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v9c0 1.1-.9 2-2 2H8l-4 4V6c0-1.1.9-2 2-2z"/>
+  </svg>
+`;
+
+// TEXT
+const label = document.createElement("div");
+label.innerHTML = "Chat to us";
+
+// ADD TO BUTTON
+launcher.appendChild(icon);
+launcher.appendChild(label);
+
 document.body.appendChild(launcher);
 
 // CREATE POPUP
@@ -38,6 +61,21 @@ popup.style.flexDirection = "column";
 popup.style.overflow = "hidden";
 popup.style.zIndex = "99999";
 document.body.appendChild(popup);
+
+const closeBtn = document.createElement("div");
+closeBtn.innerHTML = "✖";
+
+closeBtn.style.position = "absolute";
+closeBtn.style.top = "8px";
+closeBtn.style.right = "10px";
+closeBtn.style.cursor = "pointer";
+closeBtn.style.color = "white";
+closeBtn.style.fontSize = "16px";
+closeBtn.style.fontWeight = "bold";
+
+closeBtn.onclick = () => {
+  popup.style.display = "none";
+};
 
 // HEADER BAR
 const header = document.createElement("div");
