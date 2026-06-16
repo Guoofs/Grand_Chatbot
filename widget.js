@@ -1,6 +1,8 @@
 // CREATE LAUNCHER
 const launcher = document.createElement("div");
-launcher.innerHTML = "💬";
+
+launcher.src = "YOUR_IMAGE_URL_HERE"; // e.g. your GitHub image link
+launcher.alt = "Chat to our Oddfellows Assistant";
 launcher.style.position = "fixed";
 launcher.style.bottom = "20px";
 launcher.style.right = "20px";
@@ -44,7 +46,7 @@ popup.appendChild(header);
 
 // IFRAME
 const frame = document.createElement("iframe");
-frame.src = "https://your-username.github.io/Grand_Chatbot/";
+frame.src = "https://guoofs.github.io/Grand_Chatbot/";
 frame.style.width = "100%";
 frame.style.height = "100%";
 frame.style.border = "none";
