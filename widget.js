@@ -1,13 +1,16 @@
 // CREATE LAUNCHER
-const launcher = document.createElement("div");
+const launcher = document.createElement("img");
 
-launcher.src = "YOUR_IMAGE_URL_HERE"; // e.g. your GitHub image link
+launcher.src = "https://guoofs.github.io/Grand_Chatbot/Logo_footer.png"; 
 launcher.alt = "Chat to our Oddfellows Assistant";
 launcher.style.position = "fixed";
 launcher.style.bottom = "20px";
 launcher.style.right = "20px";
-launcher.style.width = "50px";
-launcher.style.height = "50px";
+
+launcher.style.width = "180px";
+launcher.style.height = "auto";
+launcher.style.borderRadius = "0";
+
 launcher.style.background = "#0078d4";
 launcher.style.color = "white";
 launcher.style.display = "flex";
