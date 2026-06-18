@@ -199,8 +199,8 @@ function askLodge() {
   showMessage(`
 If you have a local lodge which you would prefer to join, you can select this lodge on the online application form:<br><br>
 
-<a "href= https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-adult/ias-adult-application-form/" target="_blank">IAS Adult Application Form</a><br>
-<a "https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-juvenile/ias-juvenile-application/" target="_blank">IAS Juvenile Application Form</a><br><br>
+<a href= "https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-adult/ias-adult-application-form/" target="_blank">IAS Adult Application Form</a><br>
+<a href="https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-juvenile/ias-juvenile-application/" target="_blank">IAS Juvenile Application Form</a><br><br>
 
 Alternatively, you can contact a lodge secretary directly via our <a href= "https://www.guoofs.com/locations/" target="_blank">Locations page</a>.<br><br>
 
