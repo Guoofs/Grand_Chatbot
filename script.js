@@ -70,7 +70,7 @@ function showOptions(options) {
 
 function start() {clearScreen();
   document.getElementById("messages").innerHTML = "";
-  showMessage("Welcome — how can we help?");
+  showMessage(`Welcome- I am the GUOOFS virtual assistant.<br> How can I help?`);
   showOptions([
     { label: "I'm interested in joining", action: askJoining },
     { label: "I'd like to know more about your products", action: askProducts },
@@ -87,8 +87,8 @@ function clearScreen() {
 
 function askJoining() {clearScreen();
   showMessage(`If you are ready to join now you can do this by filling in our online application forms.<br><br>
-  <a href= https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-adult/ias-adult-application-form/" target="_blank">IAS Adult Application Form</a><br>
-<a href= https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/helping-hand-savings-plan/" target="_blank">IAS Juvenile Application Form</a><br><br> Otherwise please select an option below to find out more.`);
+  <a href= "https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-adult/ias-adult-application-form/" target="blank">IAS Adult Application Form</a><br>
+<a href= "https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-juvenile/ias-juvenile-application/" target="_blank">IAS Juvenile Application Form</a><br><br> Otherwise please select an option below to find out more.`);
   showOptions([
     { label: "How much does membership cost", action: askCost },
     { label: "What are the benefits of membership?", action: askBenefits },
@@ -122,7 +122,7 @@ function checkAge() {
     showMessage(`
 I'm sorry, the maximum age for taking out an IAS is 55.<br><br>
 
-Please consider if our <a href= https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/cash-builder" target="_blank">Cashbuilder product</a> may be suitable for you.<br><br>
+Please consider if our <a href= "https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/cash-builder" target="_blank">Cashbuilder product</a> may be suitable for you.<br><br>
 
 Or contact our Head Office team on <strong>0161 872 3356</strong> to discuss other ways to join the Grand United Order of Oddfellows.
 `);
@@ -159,7 +159,7 @@ function showResult(shares) {
   } else {
     showMessage(
       `Your first annual contribution would be £${contribution.toFixed(2)}.<br><br>
-      Remember, this increases with age. For our contributions table please see <a href= https://www.guoofs.com/_webedit/uploaded-files/All%20Files/Financial%20Products%20-%20Tables.pdf "target="_blank">here</a>`
+      Remember, this increases with age. For our contributions table please see <a href= "https://www.guoofs.com/_webedit/uploaded-files/All%20Files/Our%20Products/Financial%20Products%20-%20Tables.pdf "target="_blank">here</a>`
     );}
      showOptions([{ label: "Return to start", action: start }]);
 }
@@ -187,7 +187,7 @@ showMessage(`
 Last year members took part in a wide range of events from canal walks to attending the Christmas pantomime. 
 Delegates to our Annual Moveable Conference also enjoyed a fantastic weekend in York as we installed our new Grand Master.<br><br>
 
-You can see some of our latest events and future plans at <a href= https://www.guoofs.com/calendar-events/" target="_blank">our events calendar</a>.
+You can see some of our latest events and future plans at <a href= "https://www.guoofs.com/calendar-events/" target="_blank">our events calendar</a>.
 `);
 
   showOptions([
@@ -199,10 +199,10 @@ function askLodge() {
   showMessage(`
 If you have a local lodge which you would prefer to join, you can select this lodge on the online application form:<br><br>
 
-<a href= https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-adult/ias-adult-application-form/" target="_blank">IAS Adult Application Form</a><br>
-<a href= https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/helping-hand-savings-plan/" target="_blank">IAS Juvenile Application Form</a><br><br>
+<a "href= https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-adult/ias-adult-application-form/" target="_blank">IAS Adult Application Form</a><br>
+<a "https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-juvenile/ias-juvenile-application/" target="_blank">IAS Juvenile Application Form</a><br><br>
 
-Alternatively, you can contact a lodge secretary directly via our <a href= https://www.guoofs.com/locations/" target="_blank">Locations page</a>.<br><br>
+Alternatively, you can contact a lodge secretary directly via our <a href= "https://www.guoofs.com/locations/" target="_blank">Locations page</a>.<br><br>
 
 If you do not have a preference for a local lodge, you can join our Central Lodge based in Manchester. Please select this option when applying.
 `);
@@ -214,7 +214,7 @@ If you do not have a preference for a local lodge, you can join our Central Lodg
 
 function notOnline() {
   showMessage(`If you prefer not to apply online you can always print the application form and return it by post or by hand to the secretary of your chosen lodge. Contact details for the lodges can be found here:<br><br> 
-  <a href= https://www.guoofs.com/locations/" target="_blank">Locations page</a>.<br><br>`)
+  <a href= "https://www.guoofs.com/locations/" target="_blank">Locations page</a>.<br><br>`)
   showOptions([
     { label: "Return to information on joining", action: askJoining },
     { label: "Return to start", action: start }]);
@@ -238,12 +238,12 @@ function askIAS() {
   <li>Members take up a number of shares (6,12 or 18)</li>
   <li>Contributions depend on age and number of shares. For a member with 6 shares, annunal contributions start at as little as £5.33p.a. for a 16 year old and increase with age to a maximum of £12.74 for a 64 year old. For members with 12 and 18 shares this scales accordingly. </li>
   <li>Contributions cover sickness cover in the event that you become ill and cannot work, and a death benefit payable to your beneficiary in the event of your death.</li>
-   <li>Where a surplus arises on the sick and death funds, as determined by actuarial valuation, lodges can return this to their members by allocting a discretionary £ per share each year and paying interest on the balance on the IAS. The accumulated amount on your account is paid to you on your 65th birthday as a tax free lump sum. </li>
+   <li>Where a surplus arises on the sick and death funds, lodges can return this to their members by allocting a discretionary £ per share each year and paying interest on the balance on the IAS. The accumulated amount on your account is paid to you on your 65th birthday as a tax free lump sum. </li>
    <li>It is important to note that the amount allocated per share, and the interest payable will vary by lodge and is not guaranteed.</li>
 </ul>
 
  Further details on the product can be found here:<br><br> 
-  <a href= https://www.guoofs.com/our-products/membership-products-the-individual-account-system/" target="_blank">Adult Individual Account (IAS) page</a>.<br><br>`)
+  <a href= "https://www.guoofs.com/our-products/membership-products-the-individual-account-system/" target="_blank">Adult Individual Account (IAS) page</a>.<br><br>`)
   showOptions([
     { label: "I am ready to apply", action: ApplyNow },
     { label: "Return to information on products", action: askProducts },
@@ -252,17 +252,17 @@ function askIAS() {
   
 function ApplyNow() {
   showMessage(`If you are ready to join now you can do this by filling in our online application forms.<br><br>
-  <a href= https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-adult/ias-adult-application-form/" target="_blank">IAS Adult Application Form</a><br>
-<a href= https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/helping-hand-savings-plan/" target="_blank">IAS Juvenile Application Form</a><br><br>
-<a href= https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/cash-builder/cash-builder-plan-application/" target="_blank">Cashbuilder Application Form</a><br>
-<a href= https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/helping-hand-savings-plan/helping-hand-savings-plan-application/" target="_blank">Helping Hands Application Form</a><br><br> `);
+  <a href= "https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-adult/ias-adult-application-form/" target="_blank">IAS Adult Application Form</a><br>
+<a href= "https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-juvenile/ias-juvenile-application/" target="_blank">IAS Juvenile Application Form</a><br><br>
+<a href= "https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/cash-builder/cash-builder-plan-application/" target="_blank">Cashbuilder Application Form</a><br>
+<a href= "https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/helping-hand-savings-plan/helping-hand-savings-plan-application/" target="_blank">Helping Hands Application Form</a><br><br> `);
   showOptions([
     { label: "Return to start", action: start }
   ]);
 }
   
   function askCashbuilder() {
-  showMessage(`he Cashbuilder account is a long-term savings product designed to help you build up a guaranteed lump sum over a fixed term, without requiring you to join the Order.<br><br>
+  showMessage(`The Cashbuilder account is a long-term savings product designed to help you build up a guaranteed lump sum over a fixed term, without requiring you to join the Order.<br><br>
 
 Here's how it works:
 
@@ -378,7 +378,7 @@ function askJuvIAS() {
 </ul>
 
  Further details on the product can be found here:<br><br> 
-  <a href= https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-juvenile/ target="_blank">Juvenile Individual Account (IAS) page</a>.<br><br>`)
+  <a href= "https://www.guoofs.com/our-products/membership-products-the-individual-account-system/ias-juvenile/" target="_blank">Juvenile Individual Account (IAS) page</a>.<br><br>`)
   showOptions([
     { label: "I am ready to apply", action: ApplyNow },
     { label: "Return to information on products", action: askProducts },
@@ -399,9 +399,7 @@ Here's how it works:
 </ul>
 
 Further details on the product can be found here:<br><br>
-
-<a href=https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/helping-hand-savings-plan/>Helping Hands product page</a>.<br><br>
-`);
+<a href= "https://www.guoofs.com/our-products/non-membership-products-cashbuilder-helping-hands/helping-hand-savings-plan/" target="_blank">Helping Hands page</a>.<br><br>`)
 
   showOptions([
     { label: "I am ready to apply", action: ApplyNow },
@@ -477,11 +475,65 @@ Further information on each product can be found below if you would like to expl
     { label: "Return to start", action: start }
   ]);
 }
-
     
 function askMembers() {
-  showMessage("We’ll help you find the right lodge...");
-  showOptions([{ label: "Return to start", action: start }]);
+  showMessage(`If you are a member, you can find useful information like our General Rules, Goods Catalogue and Directory on our <a href= "https://www.guoofs.com/guoofs-internal/" target="_blank">GUOOFS Internal pages </a>.<br><br>
+  If your lodge has its own webpage it can be found via our <a href= "https://www.guoofs.com/guoofs-internal/member-area/" target="_blank">Members' area.</a> You will need the members username and logon to access the area.`);
+  showOptions([
+    { label: "I don't have the login details for the members area", action: askPass },
+    { label: "I'm not sure if I'm a member or I have found a membership card I didn’t know about ", action: askIfMember },
+    { label: "I need to notify you of a change of address ", action: askAction },
+    { label: "I need to make a sickness claim ", action: askAction },
+    { label: "I need to notify you of the death of a member ", action: askDAction },
+    { label: "Return to start", action: start }
+    
+  ]);
 }
+
+function askPass() {
+  showMessage(`If you are a member, and you've forgotten (or not been given) the login details to access the Members area, please either request these from your lodge secretary or contact the Deputy Grand Secretary by completing the Forgotten Login Details Form at the bottom of our <a href="https://www.guoofs.com/guoofs-internal/" target="_blank">GUOOFS Internal page </a> `);
+  showOptions([
+    { label: "Return to information for Members", action: askMembers },
+    { label: "Return to start", action: start }
+    
+  ]);
+}
+
+function askIfMember() {
+  showMessage(`It’s quite common for parents or grandparents to join children as members and continue paying contributions for many years, sometimes into adulthood. As a result, people are often unaware they have a membership until they find a card or paperwork, particularly when a parent or relative passes away. If you are unsure if you are a member, or if you’ve found a membership card, please <a href="https://www.guoofs.com/contact-us/target="_blank"> contact us </a> with any details you have and we can help check the membership details.`);
+  showOptions([
+    { label: "Return to information for Members", action: askMembers },
+    { label: "Return to start", action: start }
+    
+  ]);
+}
+
+function askAction() {
+  showMessage(`If your lodge has a webpage in the <a href= "https://www.guoofs.com/guoofs-internal/member-area/" target="_blank">Members' area</a> , you can use the forms on the lodge webpage to:
+  <ul>
+  <li>Notify us of a change of address</li>
+  <li>Make a sickness claim</li>
+  <li>Let us know of the death of a member or spouse</li>
+  <li>Make a suggestion or get in touch</li>
+  </ul>
+  If your lodge does not have a webpage, please contact your lodge secretary directly.`);
+  showOptions([
+    { label: "I don't have the login details for the members area", action: askPass },
+    { label: "Return to information for Members", action: askMembers },
+    { label: "Return to start", action: start }
+    
+  ]);
+}
+
+function askDAction() {
+  showMessage(` We are very sorry to hear of your loss. If your lodge has a webpage in the <a href= "https://www.guoofs.com/guoofs-internal/member-area/" target="_blank">Members' area</a> , you can let us know of the death of a member or spouse using the forms on the lodge webpage.<br><br>
+  If your lodge does not have a webpage, please contact your lodge secretary directly.`);
+  showOptions([
+    { label: "Return to information for Members", action: askMembers },
+    { label: "Return to start", action: start }
+    
+  ]);
+}
+
 
 start();
