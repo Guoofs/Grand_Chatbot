@@ -499,7 +499,7 @@ function askPass() {
   ]);
 }
 
-function askIfMember() {
+function askIfMember() {clearScreen();
   showMessage(`It’s quite common for parents or grandparents to join children as members and continue paying contributions for many years, sometimes into adulthood. As a result, people are often unaware they have a membership until they find a card or paperwork, particularly when a parent or relative passes away. If you are unsure if you are a member, or if you’ve found a membership card, please <a href="https://www.guoofs.com/contact-us/target="_blank"> contact us </a> with any details you have and we can help check the membership details.`);
   showOptions([
     { label: "Return to information for Members", action: askMembers },
