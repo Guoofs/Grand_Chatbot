@@ -476,7 +476,7 @@ Further information on each product can be found below if you would like to expl
   ]);
 }
     
-function askMembers() {
+function askMembers() {clearScreen();
   showMessage(`If you are a member, you can find useful information like our General Rules, Goods Catalogue and Directory on our <a href= "https://www.guoofs.com/guoofs-internal/" target="_blank">GUOOFS Internal pages </a>.<br><br>
   If your lodge has its own webpage it can be found via our <a href= "https://www.guoofs.com/guoofs-internal/member-area/" target="_blank">Members' area.</a> You will need the members username and logon to access the area.`);
   showOptions([
@@ -508,7 +508,7 @@ function askIfMember() {clearScreen();
   ]);
 }
 
-function askAction() {
+function askAction() {clearScreen();
   showMessage(`If your lodge has a webpage in the <a href= "https://www.guoofs.com/guoofs-internal/member-area/" target="_blank">Members' area</a> , you can use the forms on the lodge webpage to:
   <ul>
   <li>Notify us of a change of address</li>
@@ -525,7 +525,7 @@ function askAction() {
   ]);
 }
 
-function askDAction() {
+function askDAction() {clearScreen();
   showMessage(` We are very sorry to hear of your loss. If your lodge has a webpage in the <a href= "https://www.guoofs.com/guoofs-internal/member-area/" target="_blank">Members' area</a> , you can let us know of the death of a member or spouse using the forms on the lodge webpage.<br><br>
   If your lodge does not have a webpage, please contact your lodge secretary directly.`);
   showOptions([
